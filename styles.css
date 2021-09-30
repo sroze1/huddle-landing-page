@@ -1,4 +1,180 @@
+:root { 
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+}
+
+.body { 
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+}
+
 .header { 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    align-items: center;
+}
+
+.header #logo {
+    width: 100%;
+}
+
+.header .button1 { 
+    padding: 0.5rem 1.5rem;
+
+    color: var(--Light-Pink);
+    background: transparent;
+
+    border: 1px solid var(--Light-Pink);
+    border-radius: 20px;
+    box-shadow:  0px 5px 14px 2px var(--Light-Pink);
+}
+
+.container-centered { 
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-rows: auto;
+
+    max-width: 375px;
+    padding: 1rem 1.4rem;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.container-centered .button2 { 
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    
+    padding: 1rem 2rem;
+
+    border-radius: 25px;
+    border: none;
+}
+
+.headings  { 
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-centered .button2 { 
+   margin-top: 3rem;
+}
+
+.CTA h1 { 
+    font-size: 1.6rem;
+}
+
+#CTA-1 { 
+    margin: 5rem 0px;
+}
+
+#mockup { 
+    margin-bottom: 5rem;
+}
+
+.stats { 
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-rows: 1fr 1fr;
+
+    line-height: 1rem;
+    margin-bottom: 10rem;
+}
+
+.stats .headings { 
+    font-size: 4rem;
+}
+
+.stats2 { 
+    margin-left: 1.3rem;
+}
+
+ .stats1 .headings::before { 
+    content: 'tati';
+    font-size: 10px;
+
+    bottom: 70px;
+    position: relative
+} 
+
+.stats2 .headings::before { 
+    content: 'tati';
+    font-size: 10px;
+
+    bottom: 70px;
+    left: 10px;
+    position: relative;
+} 
+
+.stats .text { 
+    color: lightslategray;
+    line-height: 1px;
+}
+
+
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.information  {
+    display: grid;
+}
+
+.information .text { 
+    margin-bottom: 13rem;
+}
+
+.info { 
+    display: grid;
+    grid-gap: 2.3rem;
+}
+
+.info1 { 
+    background-image: url(images/bg-section-top-mobile-1.svg);
+    background-repeat: no-repeat;
+}
+
+
+
+.container-centered > div { 
+    border: 2px solid black;
+}
+
+
+
+.button2 { 
+    background-color: var(--Pink);
+    box-shadow: 0px 5px 11px 4px #AFAFAF;
+}
+
+.newsletter input { 
+    min-width: 98%;
+}
+
+
+.container-footer { 
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: black;
+    
+    display: grid;
+    margin: 0 auto;
+    max-width: 375px;
+    height: 100vh;
+
+    background-image: url('images/bg-footer-top-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newsletter .button2 { 
+  float:right;
 }
